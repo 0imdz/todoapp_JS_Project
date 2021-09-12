@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="styles.css" rel="stylesheet" />
+	<title>TO-DO App</title>
+	<link rel="shortcut icon" href="e.png" />
+	<link href="" rel="stylesheet" id="bootstrap-css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="background-color: black; border: 1px solid black">
+	<div id="wrapper" style="background-color: white; border-radius: 0px; ">
+		<header style="border: 1px solid black">
+			<div id="page-banner" style="background-color: black; border: 0px solid white">
+				<h1 class="title" style="font-family: Montserrat; color: white">TO-DO LIST</h1>
+				<p style="font-family: Montserrat; color: yellow">PLAN YOUR TIME.</p>
+				<form id="search-books">
+					<input
+						style="text-align: center; font-family: Montserrat; border-radius: 0px; background-color: black; border: 1px solid white; text-decoration: none;"
+						type="text" placeholder="search TO-DO" />
+				</form>
+			</div>
+		</header>
+		<div id="book-list">
+			<ul style="display: block;">
+
+			</ul>
+		</div>
+		<form id="add-book" style="text-align: center; margin-top: 0px;">
+			<input
+				style="text-align: center; font-family: Montserrat; border-bottom: 1px solid black; border-top: 1px solid black; border-left: 1px solid black;border-radius: 0px;"
+				type="text" placeholder="ADD a new TO-DO" />
+			<button class="add-button"
+				style="background-color: white; border-radius: 0px; border-left: 1px solid black; border-bottom: 1px solid black;font-family: Montserrat; color: black; background-color: white;">ADD</button>
+		</form>
+		<!-- <div style="text-align: center;">
+			<button class="ocultar" style="align-items: center;">Do not show finished tasks</button>
+		</div> -->
+
+		<!-- <div id="tabbed-content">
+			<ul class="tabs">
+				<li data-target="#about" class="active">About</li>
+				<li data-target="#contact">Contact</li>
+			</ul>
+			<div class="panel active" id="about">
+				<p>Content for about tab...</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare
+					rhoncus. Ut
+					convallis ante at.</p>
+			</div>
+			<div class="panel" id="contact">
+				<p>Content for contact tab...</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare
+					rhoncus. Ut
+					convallis ante at.</p>
+			</div>
+		</div> -->
+
+
+		<!-- IGNORAR Modal NO FUNCIONA-->
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+			aria-hidden="true" style="display: none">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">
+
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<!-- <div class="alert alert-danger d-none" role="alert" id="modal-alert">
+							A simple danger alert—check it out!
+						</div> -->
+						<form>
+							<div class="form-group">
+								<label>Title</label>
+								<input id="modal-title" type="text" class="form-control" placeholder="Do Something" />
+							</div>
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">
+							Close
+						</button>
+						<button type="button" class="btn btn-info" id="modal-btn">
+							Save
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-im" style="color: white;font-family: Questrial;">
+			<span><a style="text-decoration: none; cursor: pointer; color: white"
+					href="https://www.linkedin.com/in/ismael-morillas-programador/" target="_blank">©️ Ismael M.
+					Díaz</a>
+			</span>
+			<span class="footer-mas"><a style="text-decoration: none; cursor: pointer; color: white; font-size: 20px;"
+					href="https://thenounproject.com/term/create-task/1863713/" target="_blank">+</a>
+			</span>
+		</div>
+	</div>
+	<script src="app.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
