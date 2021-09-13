@@ -51,6 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
         li.appendChild(editBtn);
         li.appendChild(check);
         list.appendChild(li);
+
+        const buscar = document.querySelector('#search-books');
+        console.log(buscar);
+        buscar.style.display = 'block';
     });
 
     // const hide = document.querySelector('.ocultar');
@@ -135,7 +139,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const tachar = e.target.parentElement.firstElementChild;
             const holaadios = tachar.parentElement;
             holaadios.style.borderLeftColor = "green";
+            holaadios.style.borderRightColor = "rgb(144, 255, 97)";
             holaadios.classList.add('hecho');
+
+            const nueva_variable4 = e.target.parentElement.children[0];
+            nueva_variable4.style.color = "black";
+            console.log(nueva_variable4);
 
             const nueva_variable = e.target.parentElement.children[2];
             // console.log(nueva_variable);
@@ -146,15 +155,16 @@ document.addEventListener('DOMContentLoaded', function () {
             nueva_variable2.style.display = "none";
 
             const nueva_variable22 = e.target.parentElement.children[3];
-            // console.log(nueva_variable22);
-            nueva_variable22.textContent = "task done!";
-            nueva_variable22.style.backgroundColor = "rgb(255, 97, 97)";
-            nueva_variable22.style.borderBottomColor = "black";
+            // // console.log(nueva_variable22);
+            // nueva_variable22.textContent = "task done";
+            // nueva_variable22.style.backgroundColor = "green";
+            // nueva_variable22.style.borderBottomColor = "black";
+            nueva_variable22.style.display = "none";
 
             const nueva_variable3 = e.target.parentElement;
             // console.log(nueva_variable3);
             nueva_variable3.style.backgroundColor = "rgb(144, 255, 97)";
-            nueva_variable3.style.borderColor = "rgb(255, 97, 97)";
+            nueva_variable3.style.color = "black";
             // nueva_variable3.textContent = "done";
         }
     });
