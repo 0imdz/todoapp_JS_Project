@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(buscar2);
             const buscar3 = document.getElementById('valor');
             console.log(buscar3.value);
-            buscar2.innerHTML = `<span class="name">${buscar3.value}</span>
+            buscar2.innerHTML = `<span class="name" style="width: 20vh">${buscar3.value}</span>
                                                 <span class="delete">delete</span>
                 			                    <span class="edit">edit</span>
                                                 <span class="done">is done</span>`;
