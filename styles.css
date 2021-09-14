@@ -34,7 +34,7 @@ html, body{
 }
 
 #valor{
-    width: 30vh;
+    width: 18vh;
     border-bottom: 1px solid rgb(78, 78, 78);
     border-top: none;
     border-right: none;
@@ -142,7 +142,7 @@ h1, h2{
 
 .name{
     font-weight: bold;
-    padding-right: 50vh;
+    padding-right: 60vh;
     margin-bottom: 20vh;
     color: white;
 }
